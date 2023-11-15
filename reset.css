@@ -1,11 +1,118 @@
-/* Reset some default styles */
 body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; 
 }
 
-/* Global styles */
+/* Mobile Styles */
+
+/* Media Query for screens with a minimum width of 600px */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 16px; /* Increase font size for better readability on larger screens */
+  }
+
+  header {
+    padding: 1rem 0.5rem; /* Adjust padding for a more compact header */
+  }
+
+  nav li {
+    margin-right: 1%; /* Reduce margin between navigation items */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Increase heading font size */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Increase subheading font size */
+  }
+
+  ul {
+    margin-left: 1%; /* Reduce margin for lists */
+  }
+
+  .container {
+    padding: 0.5rem; /* Adjust container padding for a more compact layout */
+  }
+}
+
+/* Media Query for screens with a minimum width of 900px */
+@media only screen and (min-width: 900px) {
+  body {
+    font-size: 16px; /* Increase font size for better readability on larger screens */
+  }
+
+  header {
+    padding: 1rem 0.5rem; /* Adjust padding for a more compact header */
+  }
+
+  nav li {
+    margin-right: 1%; /* Reduce margin between navigation items */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Increase heading font size */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Increase subheading font size */
+  }
+
+  ul {
+    margin-left: 1%; /* Reduce margin for lists */
+  }
+
+  .container {
+    padding: 0.5rem; /* Adjust container padding for a more compact layout */
+  }
+
+  section {
+    padding: 1.5rem; /* Increase padding for sections on larger screens */
+  }
+}
+
+#map {
+    height: 1000px;
+    width: 100%;
+}
+
+#prevBtnNBA {
+    left: 10px;
+}
+
+#nextBtnNBA {
+    right: 10px;
+}
+
+#prevBtnF1 {
+    left: 10px;
+}
+
+#nextBtnF1 {
+    right: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -32,7 +139,7 @@ nav ul {
 nav li {
   display: inline;
   margin-right: 2%;
-  font-size: 1rem;
+  font-size: 1rem; 
 }
 
 header a {
@@ -68,7 +175,7 @@ p em {
 
 ul {
   margin-top: 1rem;
-  margin-left: 2%;
+  margin-left: 2%; 
 }
 
 section + section {
@@ -76,7 +183,7 @@ section + section {
 }
 
 .sports-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
   background-color: #f0f0f0;
   padding: 2rem;
   display: flex;
@@ -85,21 +192,32 @@ section + section {
 }
 
 .sports-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.sports-section .nba img,
-.sports-section .formula1 img {
+.sports-section .nba img {
   max-width: 45%;
-  float: right;
-  clear: both;
-  padding: 10px;
+  float: right; 
+  clear: both; 
+  padding: 10px; 
   border: 2px solid #000;
 }
 
-.sports-section .nba p,
+.sports-section .nba p {
+  max-width: 45%;
+  float: left; 
+}
+
+.sports-section .formula1 img {
+  max-width: 45%;
+  float: right; 
+  clear: both; 
+  padding: 10px; 
+  border: 2px solid #000;
+}
+
 .sports-section .formula1 p {
   max-width: 45%;
   float: left;
